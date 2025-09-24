@@ -1,0 +1,23 @@
+/* Logo background removal styles */
+.wtf-logo {
+  /* Remove white/light backgrounds */
+  mix-blend-mode: multiply;
+
+  /* Alternative: use CSS mask to remove light colors */
+  /* background: transparent; */
+  /* filter: brightness(1.1) contrast(1.2); */
+}
+
+.wtf-logo-transparent {
+  /* For PNG versions with transparency */
+  background: transparent;
+}
+
+/* If using as background image */
+.wtf-logo-bg {
+  background-image: url('/hero-image.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  mix-blend-mode: multiply;
+}
